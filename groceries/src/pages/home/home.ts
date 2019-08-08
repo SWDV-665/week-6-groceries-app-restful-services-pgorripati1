@@ -22,12 +22,12 @@ export class HomePage {
       this.loadItems();
     });
   }
-
+  //Default method to load items along with Ionic contructor
   ionViewDidEnter() {
     this.loadItems();
   }
 
-  //
+  //Method to load items in Async
   loadItems(){
     this.dataService.getItems()
       .subscribe(
